@@ -7,14 +7,14 @@ import './index.css';
 function App() {
   const DEB_URL = 'https://github.com/pzynk/desktop/releases/download/v0.1.9/Pzync_0.1.9_amd64.deb';
   const EXE_URL = 'https://github.com/pzynk/desktop/releases/download/v0.1.9/Pzync_0.1.9_x64-setup.exe';
-  const APK_URL = '/downloads/app.apk';
+  const APK_URL = `${import.meta.env.BASE_URL}downloads/app.apk`;
 
   return (
     <>
       {/* ── NAV ─────────────────────────────────────── */}
       <nav className="nav" aria-label="Main Navigation">
         <div className="logo-container" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <img src="/logo2.svg" alt="Pzync Logo" />
+          <img src={`${import.meta.env.BASE_URL}logo2.svg`} alt="Pzync Logo" />
           <span>Pzync</span>
         </div>
         <div className="nav-links">
@@ -73,7 +73,7 @@ function App() {
                 <div className="notch-camera" />
               </div>
               <div className="phone-screen">
-                <img src="/screenshot.png" alt="Pzync Android Interface Mockup" />
+                <img src={`${import.meta.env.BASE_URL}screenshot.png`} alt="Pzync Android Interface Mockup" />
               </div>
             </div>
           </div>
@@ -221,7 +221,7 @@ function App() {
       <footer>
         <div className="footer-inner">
           <div className="footer-logo">
-            <img src="/logo2.svg" alt="Pzync Logo" />
+            <img src={`${import.meta.env.BASE_URL}logo2.svg`} alt="Pzync Logo" />
             <span>Pzync</span>
           </div>
           <p>© 2026 Pzync</p>

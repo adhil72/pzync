@@ -1,12 +1,13 @@
-import { Monitor, Smartphone, TerminalSquare, Download } from 'lucide-react';
+import { Monitor, Smartphone, TerminalSquare, Download, Mail } from 'lucide-react';
 
 interface DownloadsProps {
   debUrl: string;
   exeUrl: string;
-  apkUrl: string;
 }
 
-export default function Downloads({ debUrl, exeUrl, apkUrl }: DownloadsProps) {
+const EARLY_ACCESS_EMAIL = 'adhil.mhdk28@gmail.com';
+
+export default function Downloads({ debUrl, exeUrl }: DownloadsProps) {
   return (
     <section id="downloads" className="downloads-section" aria-labelledby="downloads-title">
       <div className="container">
@@ -15,14 +16,14 @@ export default function Downloads({ debUrl, exeUrl, apkUrl }: DownloadsProps) {
           <h2 className="section-title" id="downloads-title">Get Pzync</h2>
         </div>
         <div className="download-grid">
-          <div className="download-card dc-featured" id="download-card-windows">
+          <div className="download-card" id="download-card-windows">
             <div className="dc-header">
               <div className="platform-icon"><Monitor size={20} /></div>
               <span className="dc-badge">Win</span>
             </div>
             <h3>Windows</h3>
             <p>Windows 10 or later · x64</p>
-            <a href={exeUrl} className="btn btn-primary dc-btn" id="download-btn-windows" download>
+            <a href={exeUrl} className="btn btn-outline dc-btn" id="download-btn-windows" download>
               <Download size={14} /> .exe
             </a>
           </div>
@@ -42,8 +43,12 @@ export default function Downloads({ debUrl, exeUrl, apkUrl }: DownloadsProps) {
             </div>
             <h3>Android</h3>
             <p>Android 10+ · Direct install</p>
-            <a href={apkUrl} className="btn btn-outline dc-btn" id="download-btn-android" download>
-              <Download size={14} /> .apk
+            <a
+              href={`mailto:${EARLY_ACCESS_EMAIL}?subject=Pzync%20Android%20Early%20Access`}
+              className="btn btn-outline dc-btn"
+              id="download-btn-android"
+            >
+              <Mail size={14} /> Get Early Access
             </a>
           </div>
         </div>

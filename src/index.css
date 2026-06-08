@@ -409,6 +409,11 @@ body {
   box-shadow: 0 0 40px rgba(255,255,255,0.25);
 }
 
+.hero-btn-outline {
+  padding: 0.8rem 1.8rem !important;
+  font-size: 0.925rem !important;
+}
+
 /* Ghost / subtle outline button */
 .btn-ghost {
   display: inline-flex;
@@ -884,6 +889,8 @@ body {
 
 .cb-device-active { color: var(--text-main); }
 
+.cam-node-active { color: var(--text-main); }
+
 /* Privacy Visual */
 .priv-badges {
   display: flex;
@@ -1075,6 +1082,26 @@ footer {
 .footer-logo img {
   height: 18px;
   filter: grayscale(100%) brightness(180%);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.footer-link:hover {
+  color: var(--text-main);
 }
 
 /* ── RESPONSIVE ── */

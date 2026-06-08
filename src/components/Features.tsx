@@ -1,5 +1,5 @@
 import {
-  Monitor, Smartphone, Share2, Copy, Shield, Wifi
+  Monitor, Smartphone, Share2, Copy, Shield, Camera, Video
 } from 'lucide-react';
 
 export default function Features() {
@@ -66,6 +66,30 @@ export default function Features() {
             </div>
           </div>
 
+          {/* ── Full: Mobile Camera ── */}
+          <div className="bento-card bento-full cam-card" id="feature-camera">
+            <div className="bento-content">
+              <div className="bento-icon">
+                <Camera size={20} />
+              </div>
+              <h3>Mobile Camera as Webcam</h3>
+              <p>
+                Use your phone&apos;s camera as a wireless webcam on desktop —
+                for video calls, streaming, and recording. No extra hardware.
+              </p>
+            </div>
+            <div className="bento-visual priv-visual" id="camera-visual-widget">
+              <div className="priv-node node-phone cam-node-active"><Camera size={20} /></div>
+              <div className="priv-connection">
+                <div className="conn-line" />
+                <div className="conn-lock">
+                  <Video size={12} />
+                </div>
+              </div>
+              <div className="priv-node node-desktop"><Monitor size={20} /></div>
+            </div>
+          </div>
+
           {/* ── Full: Privacy ── */}
           <div className="bento-card bento-full priv-card" id="feature-privacy">
             <div className="bento-content">
@@ -77,10 +101,6 @@ export default function Features() {
                 Everything stays on your own network. No accounts, no servers,
                 no telemetry. Your data stays yours.
               </p>
-              <div className="priv-badges">
-                <span className="priv-badge"><Wifi size={12} /> LAN Only</span>
-                <span className="priv-badge"><Shield size={12} /> No Cloud</span>
-              </div>
             </div>
             <div className="bento-visual priv-visual" id="privacy-visual-widget">
               <div className="priv-node node-phone"><Smartphone size={20} /></div>

@@ -36,14 +36,12 @@ function App() {
   const displayVersion = `v${version}`;
   const DEB_URL = `https://github.com/pzynk/desktop/releases/download/${displayVersion}/Pzync_${version}_amd64.deb`;
   const EXE_URL = `https://github.com/pzynk/desktop/releases/download/${displayVersion}/Pzync_${version}_x64-setup.exe`;
-  const APK_URL = `${import.meta.env.BASE_URL}downloads/app.apk`;
-
   return (
     <>
       <Navbar />
       <Hero displayVersion={displayVersion} />
       <Features />
-      <Downloads debUrl={DEB_URL} exeUrl={EXE_URL} apkUrl={APK_URL} />
+      <Downloads debUrl={DEB_URL} exeUrl={EXE_URL} />
       <Footer />
     </>
   );

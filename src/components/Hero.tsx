@@ -30,7 +30,8 @@ export default function Hero({ displayVersion }: HeroProps) {
         <DeviceAnimation />
 
         <p className="hero-sub">
-          Local file transfers &amp; clipboard sharing.<br />No cloud. No accounts.
+          Local file transfers, clipboard sharing, media controls, and volume sync.<br />
+          No cloud. No accounts.
         </p>
 
         <div className="hero-ctas">

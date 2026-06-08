@@ -744,6 +744,11 @@ body {
   grid-column: span 5;
 }
 
+/* Media / Volume — 6 cols each */
+.bento-half {
+  grid-column: span 6;
+}
+
 /* Privacy — full 12 cols */
 .bento-full {
   grid-column: span 12;
@@ -888,6 +893,98 @@ body {
 }
 
 .cb-device-active { color: var(--text-main); }
+
+/* Media Controls Demo */
+.media-controls-demo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border-hover);
+  border-radius: var(--radius-sm);
+}
+
+.media-track {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.media-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.media-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border-hover);
+  border-radius: 50%;
+  color: var(--text-muted);
+  cursor: default;
+  padding: 0;
+}
+
+.media-btn-active {
+  color: var(--text-main);
+  background: rgba(255,255,255,0.06);
+}
+
+/* Volume Sync Demo */
+.volume-demo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border-hover);
+  border-radius: var(--radius-sm);
+}
+
+.volume-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-main);
+}
+
+.volume-row-muted {
+  color: var(--text-muted);
+}
+
+.volume-track {
+  flex: 1;
+  height: 4px;
+  background: var(--border-hover);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.volume-fill {
+  height: 100%;
+  background: var(--text-main);
+  border-radius: 99px;
+}
+
+.volume-level {
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  min-width: 2.25rem;
+  text-align: right;
+  color: var(--text-muted);
+}
 
 .cam-node-active { color: var(--text-main); }
 
@@ -1149,7 +1246,8 @@ footer {
 
   .bento-large,
   .bento-full,
-  .bento-small {
+  .bento-small,
+  .bento-half {
     grid-column: span 1;
     display: flex;
     flex-direction: column;

@@ -1,5 +1,6 @@
 import {
-  Monitor, Smartphone, Share2, Copy, Shield, Camera, Video
+  Monitor, Smartphone, Share2, Copy, Shield, Camera, Video,
+  SkipBack, Play, SkipForward, Volume2
 } from 'lucide-react';
 
 export default function Features() {
@@ -62,6 +63,54 @@ export default function Features() {
               <div className="cb-device cb-device-active">
                 <Monitor size={18} />
                 <span>Desktop</span>
+              </div>
+            </div>
+          </div>
+
+          {/* ── Half: Media Controls ── */}
+          <div className="bento-card bento-half media-card" id="feature-media-controls">
+            <div className="bento-icon">
+              <Play size={18} />
+            </div>
+            <h3>Media Controls</h3>
+            <p>View and control what&apos;s playing on your PC — play, pause, skip — right from your phone.</p>
+            <div className="media-controls-demo" id="media-controls-demo-widget">
+              <span className="media-track">Now playing on Desktop</span>
+              <div className="media-buttons">
+                <button type="button" className="media-btn" aria-label="Previous track" tabIndex={-1}>
+                  <SkipBack size={14} />
+                </button>
+                <button type="button" className="media-btn media-btn-active" aria-label="Play or pause" tabIndex={-1}>
+                  <Play size={14} />
+                </button>
+                <button type="button" className="media-btn" aria-label="Next track" tabIndex={-1}>
+                  <SkipForward size={14} />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* ── Half: Volume Sync ── */}
+          <div className="bento-card bento-half volume-card" id="feature-volume-sync">
+            <div className="bento-icon">
+              <Volume2 size={18} />
+            </div>
+            <h3>Volume Sync</h3>
+            <p>Keep your PC&apos;s master volume in sync with your phone — adjust from either device.</p>
+            <div className="volume-demo" id="volume-demo-widget">
+              <div className="volume-row">
+                <Smartphone size={16} />
+                <div className="volume-track">
+                  <div className="volume-fill" style={{ width: '72%' }} />
+                </div>
+                <span className="volume-level">72%</span>
+              </div>
+              <div className="volume-row volume-row-muted">
+                <Monitor size={16} />
+                <div className="volume-track">
+                  <div className="volume-fill" style={{ width: '72%' }} />
+                </div>
+                <span className="volume-level">72%</span>
               </div>
             </div>
           </div>

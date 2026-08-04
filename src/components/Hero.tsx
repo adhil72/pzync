@@ -31,7 +31,7 @@ export default function Hero({ displayVersion }: HeroProps) {
 
         <h2 className="hero-sub font-normal text-base md:text-lg">
           Seamlessly connect your Android, Windows, and Ubuntu devices.<br />
-          Local file transfers, clipboard sharing, media controls, and volume sync without the cloud.
+          Stream PC audio to phone, wireless camera webcam, high-speed file transfers with SHA-256 validation, and universal clipboard.
         </h2>
 
         <div className="hero-ctas">

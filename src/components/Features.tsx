@@ -1,6 +1,7 @@
 import {
   Monitor, Smartphone, Share2, Copy, Shield, Camera, Video,
-  SkipBack, Play, SkipForward, Volume2
+  SkipBack, Play, SkipForward, Volume2, Radio, CheckCircle2,
+  Sun, Moon, Zap, ShieldCheck, Cpu
 } from 'lucide-react';
 
 export default function Features() {
@@ -15,43 +16,51 @@ export default function Features() {
         </div>
 
         <div className="bento-grid">
-          {/* ── Large: File Transfer ── */}
-          <div className="bento-card bento-large ft-card" id="feature-file-transfer">
+          {/* ── Large: PC Audio Streaming (NEW) ── */}
+          <div className="bento-card bento-large audio-card" id="feature-audio-streaming">
             <div className="bento-content">
               <div className="bento-icon">
-                <Share2 size={20} />
+                <Radio size={20} />
               </div>
-              <h3>Local File Transfer (Android, Windows, Ubuntu)</h3>
+              <h3>PC System Audio Streaming</h3>
               <p>
-                Peer-to-peer over your LAN — no cloud hops, no size limits,
-                no waiting. Drag, drop, done across any OS.
+                Stream desktop system audio wirelessly to your mobile device with ultra-low latency.
+                Listen to PC music, video calls, or gaming sound on phone speakers or headphones anywhere on your LAN.
               </p>
             </div>
-            <div className="bento-visual ft-visual">
-              <div className="transfer-widget" id="tw-1">
-                <div className="tw-header">
-                  <span className="tw-name">presentation.pdf</span>
-                  <span className="tw-meta">88%</span>
+            <div className="bento-visual audio-visual" id="audio-visual-widget">
+              <div className="audio-stream-card">
+                <div className="audio-header">
+                  <div className="audio-badge">
+                    <span className="live-dot" /> LIVE STREAM
+                  </div>
+                  <span className="audio-quality">48 kHz PCM</span>
                 </div>
-                <div className="tb-track"><div className="tb-fill" style={{ width: '88%' }} /></div>
-              </div>
-              <div className="transfer-widget tw-done" id="tw-2">
-                <div className="tw-header">
-                  <span className="tw-name">vacation_photo.jpg</span>
-                  <span className="tw-meta">Done ✓</span>
+                <div className="eq-bars">
+                  <div className="eq-bar bar-1" />
+                  <div className="eq-bar bar-2" />
+                  <div className="eq-bar bar-3" />
+                  <div className="eq-bar bar-4" />
+                  <div className="eq-bar bar-5" />
+                  <div className="eq-bar bar-6" />
+                  <div className="eq-bar bar-7" />
+                  <div className="eq-bar bar-8" />
                 </div>
-                <div className="tb-track"><div className="tb-fill tb-done" style={{ width: '100%' }} /></div>
+                <div className="audio-footer">
+                  <Monitor size={14} className="text-muted" />
+                  <span className="audio-source">Desktop Audio Output</span>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* ── Small: Clipboard ── */}
+          {/* ── Small: Universal Clipboard ── */}
           <div className="bento-card bento-small cb-card" id="feature-clipboard">
             <div className="bento-icon">
               <Copy size={18} />
             </div>
             <h3>Universal Clipboard</h3>
-            <p>Copy on Android, paste on desktop. Instantly.</p>
+            <p>Copy on Android, paste on desktop — and vice versa. Real-time bi-directional clipboard sync.</p>
             <div className="clipboard-demo" id="clipboard-demo-widget">
               <div className="cb-device">
                 <Smartphone size={18} />
@@ -67,15 +76,42 @@ export default function Features() {
             </div>
           </div>
 
+          {/* ── Large: File Transfer with SHA-256 & Real-time Speed ── */}
+          <div className="bento-card bento-large ft-card" id="feature-file-transfer">
+            <div className="bento-content">
+              <div className="bento-icon">
+                <Share2 size={20} />
+              </div>
+              <h3>Streaming File Transfer & Integrity</h3>
+              <p>
+                High-speed local peer-to-peer file transfers with live MB/s throughput,
+                estimated remaining time, pause/resume, and SHA-256 cryptographic hash validation.
+              </p>
+            </div>
+            <div className="bento-visual ft-visual">
+              <div className="transfer-widget" id="tw-1">
+                <div className="tw-header">
+                  <span className="tw-name">video_project_4k.mp4</span>
+                  <span className="tw-speed">48.2 MB/s · ETA 00:03</span>
+                </div>
+                <div className="tb-track"><div className="tb-fill" style={{ width: '74%' }} /></div>
+                <div className="tw-submeta">
+                  <span className="tw-meta">74% (1.4 GB / 1.9 GB)</span>
+                  <span className="sha-badge"><CheckCircle2 size={11} /> SHA-256 Validated</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* ── Half: Media Controls ── */}
           <div className="bento-card bento-half media-card" id="feature-media-controls">
             <div className="bento-icon">
               <Play size={18} />
             </div>
             <h3>Media Controls</h3>
-            <p>View and control what&apos;s playing on your PC — play, pause, skip — right from your phone.</p>
+            <p>View now-playing metadata and control desktop media — play, pause, skip tracks — directly from your phone.</p>
             <div className="media-controls-demo" id="media-controls-demo-widget">
-              <span className="media-track">Now playing on Desktop</span>
+              <span className="media-track">Now playing on PC</span>
               <div className="media-buttons">
                 <button type="button" className="media-btn" aria-label="Previous track" tabIndex={-1}>
                   <SkipBack size={14} />
@@ -95,8 +131,8 @@ export default function Features() {
             <div className="bento-icon">
               <Volume2 size={18} />
             </div>
-            <h3>Volume Sync</h3>
-            <p>Keep your PC&apos;s master volume in sync with your phone — adjust from either device.</p>
+            <h3>Master Volume Sync</h3>
+            <p>Keep your desktop master system volume in sync with your mobile phone — adjust volume from either device.</p>
             <div className="volume-demo" id="volume-demo-widget">
               <div className="volume-row">
                 <Smartphone size={16} />
@@ -115,16 +151,15 @@ export default function Features() {
             </div>
           </div>
 
-          {/* ── Full: Mobile Camera ── */}
-          <div className="bento-card bento-full cam-card" id="feature-camera">
+          {/* ── Half: Mobile Camera ── */}
+          <div className="bento-card bento-half cam-card" id="feature-camera">
             <div className="bento-content">
               <div className="bento-icon">
                 <Camera size={20} />
               </div>
-              <h3>Mobile Camera as Webcam</h3>
+              <h3>Mobile Camera as Wireless HD Webcam</h3>
               <p>
-                Use your phone&apos;s camera as a wireless webcam on desktop —
-                for video calls, streaming, and recording. No extra hardware.
+                Use your phone&apos;s camera as a wireless webcam on Windows (virtual camera) and Ubuntu (v4l2loopback), complete with resolution and FPS controls.
               </p>
             </div>
             <div className="bento-visual priv-visual" id="camera-visual-widget">
@@ -139,16 +174,38 @@ export default function Features() {
             </div>
           </div>
 
-          {/* ── Full: Privacy ── */}
+          {/* ── Half: Light & Dark Theme UI ── */}
+          <div className="bento-card bento-half theme-card" id="feature-themes">
+            <div className="bento-content">
+              <div className="bento-icon">
+                <Sun size={20} />
+              </div>
+              <h3>Sleek Dark & Light Themes</h3>
+              <p>
+                Crafted with modern glassmorphism aesthetic supporting both Light Mode and Dark Mode across desktop and mobile.
+              </p>
+            </div>
+            <div className="theme-demo-widget" id="theme-demo-widget">
+              <div className="theme-preview dark-prev">
+                <Moon size={14} />
+                <span>Dark Theme</span>
+              </div>
+              <div className="theme-preview light-prev">
+                <Sun size={14} />
+                <span>Light Theme</span>
+              </div>
+            </div>
+          </div>
+
+          {/* ── Full: Privacy & Auto-Discovery ── */}
           <div className="bento-card bento-full priv-card" id="feature-privacy">
             <div className="bento-content">
               <div className="bento-icon">
                 <Shield size={20} />
               </div>
-              <h3>100% Local & Private</h3>
+              <h3>100% Local, Encrypted & Zero Telemetry</h3>
               <p>
-                Everything stays on your own network. No accounts, no servers,
-                no telemetry. Your data stays yours.
+                UDP local network discovery and peer-to-peer TCP encrypted pairing. Everything stays on your local network. No accounts, no cloud servers, no telemetry.
               </p>
             </div>
             <div className="bento-visual priv-visual" id="privacy-visual-widget">
@@ -156,7 +213,7 @@ export default function Features() {
               <div className="priv-connection">
                 <div className="conn-line" />
                 <div className="conn-lock">
-                  <Shield size={12} />
+                  <ShieldCheck size={14} />
                 </div>
               </div>
               <div className="priv-node node-desktop"><Monitor size={20} /></div>

@@ -1,6 +1,6 @@
 export default function DeviceAnimation() {
   return (
-    <div className="hero-device-scene" id="hero-scene" aria-label="Phone and desktop syncing wirelessly">
+    <div className="hero-device-scene" id="hero-scene" aria-label="Android phone and Windows or Ubuntu desktop syncing wirelessly via Pzync">
       <svg
         className="hero-svg"
         viewBox="0 0 860 320"

@@ -13,7 +13,7 @@ export default function Downloads({ debUrl, exeUrl }: DownloadsProps) {
       <div className="container">
         <div className="section-header">
           <p className="section-eyebrow">Available Now</p>
-          <h2 className="section-title" id="downloads-title">Get Pzync</h2>
+          <h2 className="section-title" id="downloads-title">Download Pzync for Windows, Ubuntu, and Android</h2>
         </div>
         <div className="download-grid">
           <div className="download-card" id="download-card-windows">
@@ -23,7 +23,7 @@ export default function Downloads({ debUrl, exeUrl }: DownloadsProps) {
             </div>
             <h3>Windows</h3>
             <p>Windows 10 or later · x64</p>
-            <a href={exeUrl} className="btn btn-outline dc-btn" id="download-btn-windows" download>
+            <a href={exeUrl} className="btn btn-outline dc-btn" id="download-btn-windows" download aria-label="Download Pzync for Windows">
               <Download size={14} /> .exe
             </a>
           </div>
@@ -33,7 +33,7 @@ export default function Downloads({ debUrl, exeUrl }: DownloadsProps) {
             </div>
             <h3>Ubuntu / Debian</h3>
             <p>Debian-based Linux · amd64</p>
-            <a href={debUrl} className="btn btn-outline dc-btn" id="download-btn-ubuntu" download>
+            <a href={debUrl} className="btn btn-outline dc-btn" id="download-btn-ubuntu" download aria-label="Download Pzync for Ubuntu">
               <Download size={14} /> .deb
             </a>
           </div>

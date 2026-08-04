@@ -29,10 +29,10 @@ export default function Hero({ displayVersion }: HeroProps) {
 
         <DeviceAnimation />
 
-        <p className="hero-sub">
-          Local file transfers, clipboard sharing, media controls, and volume sync.<br />
-          No cloud. No accounts.
-        </p>
+        <h2 className="hero-sub font-normal text-base md:text-lg">
+          Seamlessly connect your Android, Windows, and Ubuntu devices.<br />
+          Local file transfers, clipboard sharing, media controls, and volume sync without the cloud.
+        </h2>
 
         <div className="hero-ctas">
           <a href="#downloads" className="btn btn-primary hero-btn-primary" id="hero-btn-downloads">

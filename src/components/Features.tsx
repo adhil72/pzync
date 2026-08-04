@@ -10,7 +10,7 @@ export default function Features() {
         <div className="section-header">
           <p className="section-eyebrow">Core Features</p>
           <h2 className="section-title" id="features-title">
-            Built for speed.<br />Designed for privacy.
+            Built for speed.<br />Designed for cross-platform privacy.
           </h2>
         </div>
 
@@ -21,10 +21,10 @@ export default function Features() {
               <div className="bento-icon">
                 <Share2 size={20} />
               </div>
-              <h3>Local File Transfer</h3>
+              <h3>Local File Transfer (Android, Windows, Ubuntu)</h3>
               <p>
                 Peer-to-peer over your LAN — no cloud hops, no size limits,
-                no waiting. Drag, drop, done.
+                no waiting. Drag, drop, done across any OS.
               </p>
             </div>
             <div className="bento-visual ft-visual">

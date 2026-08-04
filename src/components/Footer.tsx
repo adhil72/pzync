@@ -7,7 +7,7 @@ export default function Footer() {
     <footer>
       <div className="footer-inner">
         <div className="footer-logo">
-          <img src={`${import.meta.env.BASE_URL}logo2.png`} alt="Pzync Logo" />
+          <img src="/logo2.png" alt="Pzync - Connect Android, Windows, Ubuntu Logo" />
           <span>Pzync</span>
         </div>
         <div className="footer-links">

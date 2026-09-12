@@ -1,13 +1,15 @@
-import { Monitor, Smartphone, TerminalSquare, Download, Mail } from 'lucide-react';
+import { Monitor, Smartphone, TerminalSquare, Download } from 'lucide-react';
+import { SiGoogleplay } from 'react-icons/si';
 
 interface DownloadsProps {
   debUrl: string;
   exeUrl: string;
+  playStoreUrl?: string;
 }
 
-const EARLY_ACCESS_EMAIL = 'adhil.mhdk28@gmail.com';
+const DEFAULT_PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=sols.sync&hl=en_IN';
 
-export default function Downloads({ debUrl, exeUrl }: DownloadsProps) {
+export default function Downloads({ debUrl, exeUrl, playStoreUrl = DEFAULT_PLAY_STORE_URL }: DownloadsProps) {
   return (
     <section id="downloads" className="downloads-section" aria-labelledby="downloads-title">
       <div className="container">
@@ -40,15 +42,19 @@ export default function Downloads({ debUrl, exeUrl }: DownloadsProps) {
           <div className="download-card" id="download-card-android">
             <div className="dc-header">
               <div className="platform-icon"><Smartphone size={20} /></div>
+              <span className="dc-badge">Play Store</span>
             </div>
             <h3>Android</h3>
-            <p>Android 10+ · Direct install</p>
+            <p>Android 7.0 or later · Google Play</p>
             <a
-              href={`mailto:${EARLY_ACCESS_EMAIL}?subject=Pzync%20Android%20Early%20Access`}
+              href={playStoreUrl}
               className="btn btn-outline dc-btn"
               id="download-btn-android"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Pzync on Google Play"
             >
-              <Mail size={14} /> Get Early Access
+              <SiGoogleplay size={14} /> Google Play
             </a>
           </div>
         </div>

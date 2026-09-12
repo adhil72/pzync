@@ -27,13 +27,14 @@ export default async function Page() {
   const displayVersion = `v${version}`;
   const DEB_URL = `https://github.com/pzynk/desktop/releases/download/${displayVersion}/Pzync_${version}_amd64.deb`;
   const EXE_URL = `https://github.com/pzynk/desktop/releases/download/${displayVersion}/Pzync_${version}_x64-setup.exe`;
+  const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=sols.sync&hl=en_IN';
 
   return (
     <>
       <Navbar />
       <Hero displayVersion={displayVersion} />
       <Features />
-      <Downloads debUrl={DEB_URL} exeUrl={EXE_URL} />
+      <Downloads debUrl={DEB_URL} exeUrl={EXE_URL} playStoreUrl={PLAY_STORE_URL} />
       <Footer />
     </>
   );

@@ -36,7 +36,12 @@ export default function RootLayout({
     "operatingSystem": "Android, Windows, Ubuntu",
     "applicationCategory": "UtilitiesApplication",
     "description": "Seamless connectivity and synchronization between Android, Windows, and Ubuntu devices.",
-    "url": "https://pzync.example.com"
+    "url": "https://pzync.example.com",
+    "installUrl": "https://play.google.com/store/apps/details?id=sols.sync&hl=en_IN",
+    "sameAs": [
+      "https://play.google.com/store/apps/details?id=sols.sync&hl=en_IN",
+      "https://github.com/pzynk"
+    ]
   };
 
   return (

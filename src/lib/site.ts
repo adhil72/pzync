@@ -34,3 +34,17 @@ export const SITE_KEYWORDS = [
 
 export const absoluteUrl = (path = "/") =>
   `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
+
+/** Date the site content was last meaningfully changed (used for sitemap lastmod). Update when content changes. */
+export const CONTENT_UPDATED = "2026-10-03";
+
+/** Facts shared by llms.txt and llms-full.txt so they never drift apart. */
+export const SITE_FACTS = [
+  "Platforms: Android 7.0 or later, Ubuntu / Debian-based Linux (amd64, .deb), Windows 10 or later (x64, .exe)",
+  "License: MIT, free and open source",
+  "Connection: direct over the local Wi-Fi (UDP 8200 for discovery, TCP 8080 for data), encrypted with TLS",
+  "Pairing: confirm a matching code shown on both screens",
+  "No account, no cloud server in file, clipboard, audio or camera transfers",
+  "Privacy: the Android app sends anonymous usage analytics (Google Firebase); the desktop app has no telemetry",
+  "Source: https://github.com/pzynk",
+];

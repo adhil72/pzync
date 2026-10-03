@@ -1,26 +1,29 @@
-"use client";
-
 export default function Navbar() {
   return (
     <nav className="nav" aria-label="Main Navigation">
       <div className="nav-inner">
-        <div className="logo-container" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <img src="/logo2.png" alt="Pzync - Connect Android, Windows, Ubuntu Logo" />
+        <a className="logo-container" href="/" aria-label="Pzync home">
+          <img src="/app-mark.svg" alt="" width={28} height={28} />
           <span>Pzync</span>
-        </div>
+        </a>
         <div className="nav-links">
-          <a href="#features" id="nav-link-features">Features</a>
-          <a href="#downloads" id="nav-link-downloads">Downloads</a>
-          <a
-            href="https://github.com/pzynk"
-            id="nav-link-contribute"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="/#features" id="nav-link-features">
+            Features
+          </a>
+          <a href="/docs">Docs</a>
+          <a href="/about">About</a>
+          <a href="/#downloads" id="nav-link-downloads">
+            Downloads
+          </a>
+          <a href="/contribute" id="nav-link-contribute">
             Contribute
           </a>
         </div>
-        <a href="#downloads" className="btn btn-primary nav-cta" id="nav-cta-download">
+        <a
+          href="/#downloads"
+          className="btn btn-primary nav-cta"
+          id="nav-cta-download"
+        >
           Download
         </a>
       </div>

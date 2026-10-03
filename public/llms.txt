@@ -1,0 +1,24 @@
+# Pzync
+
+> Pzync is a free, open-source app that connects an Android phone to an Ubuntu (Debian-based Linux) or Windows computer over the local network. It sends files, syncs the clipboard, streams PC audio to the phone, and uses the phone as a wireless webcam and microphone. No account and no cloud server is involved in transfers.
+
+## Key facts
+- Platforms: Android 7.0+, Ubuntu / Debian-based Linux (amd64, .deb), Windows 10+ (x64, .exe)
+- License: MIT
+- Connection: direct over local Wi-Fi (UDP 8200 for discovery, TCP 8080 for data), encrypted with TLS, paired by confirming a matching code on both screens
+- Android app collects anonymous usage analytics (Google Firebase); the desktop app has no telemetry
+
+## Guides
+- [Connect Android to Ubuntu](/connect-android-to-ubuntu): install the .deb, pair, firewall and webcam packages
+- [Connect Android to Windows](/connect-android-to-windows): install, pair, firewall
+- [Use an Android phone as a webcam](/android-phone-as-webcam): Ubuntu and Windows virtual camera setup
+- [Transfer files between Android and a PC](/transfer-files-android-to-pc): Wi-Fi transfer with SHA-256 verification
+- [Sync the clipboard between Android and a PC](/sync-clipboard-android-to-pc): text, screenshots, Quick Settings tile
+
+## Reference
+- [Home and downloads](/): overview, features, FAQ, download links
+- [Docs](/docs): install, pairing, ports, webcam, microphone, screenshot sync
+- [Support](/support): troubleshooting and FAQ
+- [Changelog](/changelog): release notes
+- [Privacy](/privacy), [Terms](/terms), [License](/license)
+- [Contribute](/contribute): build instructions and how to help

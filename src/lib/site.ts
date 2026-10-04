@@ -1,7 +1,5 @@
-// Set NEXT_PUBLIC_SITE_URL to the production origin (no trailing slash) when deploying.
-export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://pzync.example.com"
-).replace(/\/$/, "");
+// Production origin, hardcoded on purpose (no trailing slash).
+export const SITE_URL = "https://pzync.tentaclespvtltd.com";
 
 export const SITE_NAME = "Pzync";
 

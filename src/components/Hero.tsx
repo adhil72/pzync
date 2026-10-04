@@ -36,7 +36,7 @@ export default function Hero() {
           role="img"
           aria-label="One photo continuing across an Android phone and a computer screen, showing a file sent directly between them"
         >
-          <svg viewBox="0 0 1200 470" fill="none" aria-hidden="true">
+          <svg viewBox="170 20 990 450" fill="none" aria-hidden="true">
             <defs>
               <linearGradient id="hs-sky" x1="0" y1="30" x2="0" y2="330" gradientUnits="userSpaceOnUse">
                 <stop offset="0" stopColor="#141414" />
@@ -57,8 +57,8 @@ export default function Hero() {
                 {stars.map(([x, y]) => (
                   <circle key={`${x}-${y}`} cx={x} cy={y} r="1.6" fill="#fff" opacity="0.7" />
                 ))}
-                <circle cx="905" cy="185" r="110" fill="url(#hs-sun)" />
-                <circle cx="905" cy="185" r="36" fill="#fff" />
+                <circle cx="770" cy="185" r="110" fill="url(#hs-sun)" />
+                <circle cx="770" cy="185" r="36" fill="#fff" />
                 <path d="M190 290 L260 262 L330 285 L420 240 L520 280 L640 225 L760 275 L880 215 L1000 270 L1150 235 V460 H190Z" fill="#6e6e6e" />
                 <path d="M190 335 L300 300 L400 338 L520 292 L640 338 L780 288 L920 342 L1040 302 L1150 332 V460 H190Z" fill="#454545" />
                 <path d="M190 385 L320 352 L450 388 L580 352 L720 392 L860 357 L1000 397 L1150 367 V460 H190Z" fill="#1f1f1f" />

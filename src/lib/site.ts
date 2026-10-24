@@ -1,7 +1,7 @@
 // Production origin, hardcoded on purpose (no trailing slash).
 export const SITE_URL = "https://pzync.tentaclespvtltd.com";
 
-export const SITE_NAME = "Pzync";
+export const SITE_NAME = "SockLink";
 
 export const SITE_TAGLINE =
   "Connect Android to Windows & Ubuntu, free and open source";
@@ -27,7 +27,7 @@ export const SITE_KEYWORDS = [
   "Phone Link alternative for Ubuntu",
   "open source phone to PC sync",
   "local network file sharing Android",
-  "Pzync",
+  "SockLink",
 ];
 
 export const absoluteUrl = (path = "/") =>

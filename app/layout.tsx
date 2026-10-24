@@ -22,7 +22,7 @@ const robotoMono = Roboto_Mono({
   display: "swap",
 });
 
-const HOME_TITLE = "Pzync: Connect Android to Ubuntu & Windows, Free & Open Source";
+const HOME_TITLE = "SockLink: Connect Android to Ubuntu & Windows, Free & Open Source";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   description: SITE_DESCRIPTION,
   keywords: SITE_KEYWORDS,
   applicationName: SITE_NAME,
-  authors: [{ name: "Pzync", url: "https://github.com/pzynk" }],
-  creator: "Pzync",
+  authors: [{ name: "SockLink", url: "https://github.com/pzynk" }],
+  creator: "SockLink",
   category: "technology",
   alternates: { canonical: "/" },
   robots: {

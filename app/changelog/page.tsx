@@ -8,7 +8,7 @@ import { RELEASES_URL } from "../../src/lib/links";
 export const metadata: Metadata = pageMetadata({
   title: "Changelog and Release Notes",
   description:
-    "Every release of the Pzync desktop app for Windows and Ubuntu, newest first, with release notes from GitHub.",
+    "Every release of the SockLink desktop app for Windows and Ubuntu, newest first, with release notes from GitHub.",
   path: "/changelog",
 });
 
@@ -80,7 +80,7 @@ export default async function ChangelogPage() {
       jsonLd={breadcrumbJsonLd([{ name: "Changelog", path: "/changelog" }])}
       eyebrow="Changelog"
       title="What's new"
-      lead="Every release of the Pzync desktop app, newest first."
+      lead="Every release of the SockLink desktop app, newest first."
     >
       {releases && releases.length > 0 ? (
         <div className="release-list">

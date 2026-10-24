@@ -4,9 +4,9 @@ import { SITE_FACTS, absoluteUrl } from "../../src/lib/site";
 export const dynamic = "force-static";
 
 export function GET() {
-  const body = `# Pzync
+  const body = `# SockLink
 
-> Pzync is a free, open-source app that connects an Android phone to an Ubuntu (Debian-based Linux) or Windows computer over the local network. It sends files, syncs the clipboard, streams PC audio to the phone, and uses the phone as a wireless webcam and microphone. No account and no cloud server is involved in transfers.
+> SockLink is a free, open-source app that connects an Android phone to an Ubuntu (Debian-based Linux) or Windows computer over the local network. It sends files, syncs the clipboard, streams PC audio to the phone, and uses the phone as a wireless webcam and microphone. No account and no cloud server is involved in transfers.
 
 ## Key facts
 ${SITE_FACTS.map((f) => `- ${f}`).join("\n")}

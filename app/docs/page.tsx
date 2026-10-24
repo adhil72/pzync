@@ -7,14 +7,14 @@ import { absoluteUrl } from "../../src/lib/site";
 export const metadata: Metadata = pageMetadata({
   title: "Setup Guide: Connect Android to Windows or Ubuntu",
   description:
-    "Install Pzync, pair your Android phone with a Windows or Ubuntu PC, open the right firewall ports, and set up the webcam, microphone and screenshot sync.",
+    "Install SockLink, pair your Android phone with a Windows or Ubuntu PC, open the right firewall ports, and set up the webcam, microphone and screenshot sync.",
   path: "/docs",
 });
 
 const pairingSteps = [
   "Connect your phone and computer to the same Wi-Fi or local network.",
-  "Open Pzync on your Windows or Ubuntu computer. It starts announcing itself on the network.",
-  "Open Pzync on your Android phone. Your computer appears in the device list.",
+  "Open SockLink on your Windows or Ubuntu computer. It starts announcing itself on the network.",
+  "Open SockLink on your Android phone. Your computer appears in the device list.",
   "Tap your computer and request to pair.",
   "Check that the matching code shown on both screens is the same, then accept on the computer.",
 ];
@@ -24,11 +24,11 @@ const docsJsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    name: "How to connect an Android phone to Windows or Ubuntu with Pzync",
+    name: "How to connect an Android phone to Windows or Ubuntu with SockLink",
     description:
-      "Install Pzync on your phone and computer and pair them over your local network.",
+      "Install SockLink on your phone and computer and pair them over your local network.",
     totalTime: "PT5M",
-    tool: [{ "@type": "HowToTool", name: "Pzync for Android" }, { "@type": "HowToTool", name: "Pzync for Windows or Ubuntu" }],
+    tool: [{ "@type": "HowToTool", name: "SockLink for Android" }, { "@type": "HowToTool", name: "SockLink for Windows or Ubuntu" }],
     step: pairingSteps.map((text, i) => ({
       "@type": "HowToStep",
       position: i + 1,
@@ -40,7 +40,7 @@ const docsJsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    headline: "Get started with Pzync",
+    headline: "Get started with SockLink",
     about: "Connecting Android to Windows and Ubuntu",
     url: absoluteUrl("/docs"),
     inLanguage: "en",
@@ -64,7 +64,7 @@ export default function DocsPage() {
     <PageLayout
       jsonLd={docsJsonLd}
       eyebrow="Documentation"
-      title="Get started with Pzync"
+      title="Get started with SockLink"
       lead="From install to your first transfer in a few minutes. Then set up the features that need a little extra."
     >
       <div className="doc-layout">
@@ -77,7 +77,7 @@ export default function DocsPage() {
 
         <div className="prose">
           <h2 id="install">Install</h2>
-          <p>You need Pzync on both devices:</p>
+          <p>You need SockLink on both devices:</p>
           <ul>
             <li><strong>Phone:</strong> install the Android app from Google Play. It needs Android 7.0 or later.</li>
             <li><strong>Computer:</strong> install the Windows <code>.exe</code> or the Ubuntu/Debian <code>.deb</code> from the <a href="/#downloads">downloads section</a>.</li>
@@ -86,8 +86,8 @@ export default function DocsPage() {
           <h2 id="pair">Pair your devices</h2>
           <ol className="steps">
             <li>Connect your phone and computer to the <strong>same Wi-Fi or local network</strong>.</li>
-            <li>Open Pzync on your computer. It starts announcing itself on the network.</li>
-            <li>Open Pzync on your phone. Your computer appears in the device list.</li>
+            <li>Open SockLink on your computer. It starts announcing itself on the network.</li>
+            <li>Open SockLink on your phone. Your computer appears in the device list.</li>
             <li>Tap your computer and request to pair.</li>
             <li>Check that the <strong>matching code</strong> shown on both screens is the same, then accept on the computer.</li>
           </ol>
@@ -97,7 +97,7 @@ export default function DocsPage() {
           </p>
 
           <h2 id="network">Network and firewall</h2>
-          <p>Pzync uses two ports on your local network:</p>
+          <p>SockLink uses two ports on your local network:</p>
           <table>
             <tbody>
               <tr><th>Port</th><th>Protocol</th><th>Purpose</th></tr>
@@ -106,7 +106,7 @@ export default function DocsPage() {
             </tbody>
           </table>
           <p>
-            If your phone cannot find your computer, allow Pzync through your
+            If your phone cannot find your computer, allow SockLink through your
             computer&apos;s firewall for private networks, and make sure your router
             does not isolate Wi-Fi clients from each other. Some guest networks
             and public Wi-Fi do this. See <a href="/support">Support</a> for more fixes.
@@ -115,7 +115,7 @@ export default function DocsPage() {
           <h2 id="camera">Phone as webcam</h2>
           <p>
             Open the camera feature on your phone and start the stream from the
-            device screen. Pzync creates a virtual camera on your computer that
+            device screen. SockLink creates a virtual camera on your computer that
             apps like video-call software can select.
           </p>
           <h3>Ubuntu</h3>
@@ -126,7 +126,7 @@ export default function DocsPage() {
           <pre><code>sudo apt install v4l2loopback-dkms</code></pre>
           <h3>Windows</h3>
           <p>
-            Pzync includes a virtual camera component and registers it the first
+            SockLink includes a virtual camera component and registers it the first
             time you use the camera. Windows may ask for permission. If the camera
             does not show up in an app, restart that app after the first start.
           </p>
@@ -159,9 +159,9 @@ export default function DocsPage() {
           <h2 id="background">Running in the background</h2>
           <p>
             The desktop app lives in your system tray and can start with your
-            computer. On Android, Pzync keeps a small notification while it is
+            computer. On Android, SockLink keeps a small notification while it is
             connected. If your phone stops the connection when the screen is off,
-            exclude Pzync from battery optimization in Android settings.
+            exclude SockLink from battery optimization in Android settings.
           </p>
         </div>
       </div>

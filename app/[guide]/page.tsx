@@ -56,8 +56,8 @@ export default async function GuidePage({
       description: guide.intro,
       totalTime: "PT5M",
       tool: [
-        { "@type": "HowToTool", name: "Pzync for Android" },
-        { "@type": "HowToTool", name: "Pzync for Windows or Ubuntu" },
+        { "@type": "HowToTool", name: "SockLink for Android" },
+        { "@type": "HowToTool", name: "SockLink for Windows or Ubuntu" },
       ],
       step: guide.steps.map((text, i) => ({
         "@type": "HowToStep",
@@ -80,7 +80,7 @@ export default async function GuidePage({
       <div className="prose guide">
         <p>
           <a className="btn btn-primary" href="/#downloads">
-            <Download size={16} /> Download Pzync
+            <Download size={16} /> Download SockLink
           </a>
         </p>
 

@@ -8,7 +8,7 @@ import { DESKTOP_ISSUES, DESKTOP_REPO, GITHUB_URL } from "../../src/lib/links";
 export const metadata: Metadata = pageMetadata({
   title: "Contribute to the Open Source Android to PC App",
   description:
-    "Help build Pzync: report bugs, suggest features, or send a pull request. Build instructions for the Android app and the Tauri desktop app.",
+    "Help build SockLink: report bugs, suggest features, or send a pull request. Build instructions for the Android app and the Tauri desktop app.",
   path: "/contribute",
 });
 
@@ -17,8 +17,8 @@ export default function ContributePage() {
     <PageLayout
       jsonLd={breadcrumbJsonLd([{ name: "Contribute", path: "/contribute" }])}
       eyebrow="Open source"
-      title="Help build Pzync"
-      lead="Pzync is made in the open. Bug reports, ideas, docs fixes and code are all welcome."
+      title="Help build SockLink"
+      lead="SockLink is made in the open. Bug reports, ideas, docs fixes and code are all welcome."
     >
       <div className="prose" style={{ maxWidth: 820 }}>
         <h2>Ways to help</h2>
@@ -43,7 +43,7 @@ export default function ContributePage() {
 
       <div className="prose" style={{ marginTop: "3rem" }}>
         <h2>Project layout</h2>
-        <p>Pzync is two projects, each in its own repository:</p>
+        <p>SockLink is two projects, each in its own repository:</p>
         <ul>
           <li><strong>Android app:</strong> Kotlin, with the <code>sols.sync</code> package, built with Gradle.</li>
           <li><strong>Desktop app:</strong> Tauri 2 with a React 19 and TypeScript front end and a Rust back end. Source: <a href={DESKTOP_REPO} target="_blank" rel="noopener noreferrer">pzynk/desktop</a>.</li>
@@ -81,7 +81,7 @@ cargo test`}</code></pre>
 
         <h2>Reporting a security problem</h2>
         <p>
-          Pzync can run commands and capture the screen of a paired computer, so
+          SockLink can run commands and capture the screen of a paired computer, so
           security reports matter. Please do not post vulnerabilities in a public
           issue. Use GitHub&apos;s private vulnerability reporting on the repository
           if it is available, or ask for a private channel in an issue without

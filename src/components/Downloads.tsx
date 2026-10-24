@@ -44,7 +44,7 @@ export default function Downloads({ debUrl, exeUrl, playStoreUrl = DEFAULT_PLAY_
               id="download-btn-android"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Download Pzync on Google Play"
+              aria-label="Download SockLink on Google Play"
             >
               <SiGoogleplay size={14} /> Get it on Google Play
             </a>
@@ -61,7 +61,7 @@ export default function Downloads({ debUrl, exeUrl, playStoreUrl = DEFAULT_PLAY_
               <div><dt>Requires</dt><dd>Windows 10+</dd></div>
               <div><dt>Format</dt><dd>.exe · x64</dd></div>
             </dl>
-            <a href={exeUrl} className="btn btn-outline dc-btn" id="download-btn-windows" download aria-label="Download Pzync for Windows">
+            <a href={exeUrl} className="btn btn-outline dc-btn" id="download-btn-windows" download aria-label="Download SockLink for Windows">
               <Download size={14} /> Download .exe
             </a>
           </div>
@@ -77,7 +77,7 @@ export default function Downloads({ debUrl, exeUrl, playStoreUrl = DEFAULT_PLAY_
               <div><dt>Requires</dt><dd>Debian-based</dd></div>
               <div><dt>Format</dt><dd>.deb · amd64</dd></div>
             </dl>
-            <a href={debUrl} className="btn btn-outline dc-btn" id="download-btn-ubuntu" download aria-label="Download Pzync for Ubuntu">
+            <a href={debUrl} className="btn btn-outline dc-btn" id="download-btn-ubuntu" download aria-label="Download SockLink for Ubuntu">
               <Download size={14} /> Download .deb
             </a>
           </div>

@@ -23,7 +23,7 @@ export function renderOgImage() {
             <path d="M7 86a53 53 0 0 1 106 0M33 86a27 27 0 0 1 54 0" stroke="#fff" strokeWidth="10" strokeLinecap="round" />
             <circle cx="60" cy="86" r="6" fill="#fff" />
           </svg>
-          <div style={{ fontSize: 44, fontWeight: 800, letterSpacing: -1 }}>Pzync</div>
+          <div style={{ fontSize: 44, fontWeight: 800, letterSpacing: -1 }}>SockLink</div>
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ fontSize: 84, fontWeight: 800, lineHeight: 1.05, letterSpacing: -3 }}>

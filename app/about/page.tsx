@@ -20,7 +20,7 @@ import Footer from "../../src/components/Footer";
 export const metadata: Metadata = pageMetadata({
   title: "About the Android to Windows & Ubuntu Connection App",
   description:
-    "Why Pzync exists: a free, open-source app that connects your Android phone to Windows or Ubuntu over your local network, with no account and no cloud.",
+    "Why SockLink exists: a free, open-source app that connects your Android phone to Windows or Ubuntu over your local network, with no account and no cloud.",
   path: "/about",
 });
 
@@ -57,14 +57,14 @@ export default function AboutPage() {
       <JsonLd
         data={[
           breadcrumbJsonLd([{ name: "About", path: "/about" }]),
-          { "@context": "https://schema.org", "@type": "AboutPage", name: "About Pzync", url: absoluteUrl("/about"), about: { "@id": absoluteUrl("/#organization") } },
+          { "@context": "https://schema.org", "@type": "AboutPage", name: "About SockLink", url: absoluteUrl("/about"), about: { "@id": absoluteUrl("/#organization") } },
         ]}
       />
       <Navbar />
       <main id="main" className="about-page">
         <section className="about-hero container">
           <p className="section-eyebrow">
-            About Pzync
+            About SockLink
           </p>
           <h1>
             Made for the space
@@ -72,12 +72,12 @@ export default function AboutPage() {
             <span>between your devices.</span>
           </h1>
           <p>
-            We move between phone and computer all day. Pzync makes that handoff
+            We move between phone and computer all day. SockLink makes that handoff
             feel natural, keeping the things you need within reach on both
             screens.
           </p>
           <a className="btn btn-primary" href="/#downloads">
-            Get Pzync <ArrowRight size={17} />
+            Get SockLink <ArrowRight size={17} />
           </a>
           <div
             className="about-diagram"
@@ -108,7 +108,7 @@ export default function AboutPage() {
               out of the way.
             </h2>
             <p>
-              Pzync connects Android with Windows and Ubuntu so sharing a file,
+              SockLink connects Android with Windows and Ubuntu so sharing a file,
               copying text, or listening to your computer from your phone feels
               like one continuous workflow. Pair your devices on the same local
               network and get back to what you were doing.
@@ -140,7 +140,7 @@ export default function AboutPage() {
                 Your workflow.
               </h2>
               <p>
-                Pzync uses local discovery and direct device pairing. There is
+                SockLink uses local discovery and direct device pairing. There is
                 no account to create and no cloud service in the middle of your
                 everyday transfers.
               </p>
@@ -167,7 +167,7 @@ export default function AboutPage() {
           </h2>
           <div>
             <a className="btn btn-primary" href="/#downloads">
-              Download Pzync <ArrowRight size={17} />
+              Download SockLink <ArrowRight size={17} />
             </a>
             <a
               className="btn btn-outline"

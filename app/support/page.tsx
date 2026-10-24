@@ -10,7 +10,7 @@ import { DESKTOP_ISSUES, GITHUB_URL } from "../../src/lib/links";
 export const metadata: Metadata = pageMetadata({
   title: "Help & FAQ: Android to PC Connection Problems",
   description:
-    "Fix common Pzync problems: phone cannot find the computer, dropped connections, pairing codes, webcam not showing up, and screenshot sync.",
+    "Fix common SockLink problems: phone cannot find the computer, dropped connections, pairing codes, webcam not showing up, and screenshot sync.",
   path: "/support",
 });
 
@@ -22,8 +22,8 @@ const faqs = [
         <p>Work through these in order:</p>
         <ul>
           <li>Both devices must be on the <strong>same Wi-Fi or local network</strong>. Mobile data does not work.</li>
-          <li>Make sure Pzync is open on the computer.</li>
-          <li>Allow Pzync through the computer&apos;s firewall for private networks. Pzync uses UDP port <code>8200</code> and TCP port <code>8080</code>.</li>
+          <li>Make sure SockLink is open on the computer.</li>
+          <li>Allow SockLink through the computer&apos;s firewall for private networks. SockLink uses UDP port <code>8200</code> and TCP port <code>8080</code>.</li>
           <li>Some routers and guest networks block devices from seeing each other (often called client or AP isolation). Turn that off or use your main network.</li>
           <li>A VPN on either device can hide the local network. Turn it off to test.</li>
         </ul>
@@ -35,9 +35,9 @@ const faqs = [
     a: (
       <p>
         Android may stop background apps to save battery. In your phone&apos;s
-        settings, set Pzync&apos;s battery usage to unrestricted (the name varies by
+        settings, set SockLink&apos;s battery usage to unrestricted (the name varies by
         brand), and keep its notification enabled. That notification is how
-        Android knows Pzync is allowed to keep running.
+        Android knows SockLink is allowed to keep running.
       </p>
     ),
   },
@@ -66,13 +66,13 @@ const faqs = [
     a: (
       <ul>
         <li>Turn on <strong>Sync Screenshots to Desktop Clipboard</strong> in the Android clipboard settings. It is off by default.</li>
-        <li>Allow Pzync to access photos when Android asks.</li>
-        <li>Pzync syncs screenshots taken right now, not ones from earlier.</li>
+        <li>Allow SockLink to access photos when Android asks.</li>
+        <li>SockLink syncs screenshots taken right now, not ones from earlier.</li>
       </ul>
     ),
   },
   {
-    q: "Does Pzync send my files to the cloud?",
+    q: "Does SockLink send my files to the cloud?",
     a: (
       <p>
         No. Files, clipboard, audio and camera go directly between your paired
@@ -93,7 +93,7 @@ const faqs = [
     ),
   },
   {
-    q: "How do I update Pzync?",
+    q: "How do I update SockLink?",
     a: (
       <p>
         The desktop app checks for new releases and can update itself. The
@@ -137,7 +137,7 @@ export default function SupportPage() {
         <a className="doc-card" href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
           <MessageSquare size={22} />
           <strong>Ask the community</strong>
-          <span>Find the Pzync projects and discussions on GitHub.</span>
+          <span>Find the SockLink projects and discussions on GitHub.</span>
         </a>
       </div>
     </PageLayout>

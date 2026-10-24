@@ -16,13 +16,13 @@ export default function Hero() {
           <span>work as one.</span>
         </h1>
         <p className="hero-lead">
-          Pzync is a free, open-source app that connects your Android phone to
+          SockLink is a free, open-source app that connects your Android phone to
           Ubuntu or Windows over your local network. Send files, sync the
           clipboard, stream audio, and use your phone as a webcam.
         </p>
         <div className="hero-actions">
           <a href="#downloads" className="btn btn-primary hero-btn">
-            <Download size={16} /> Download Pzync
+            <Download size={16} /> Download SockLink
           </a>
           <a href="#features" className="btn btn-outline hero-btn">
             Explore features <ArrowRight size={16} />

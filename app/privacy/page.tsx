@@ -7,7 +7,7 @@ import { DESKTOP_ISSUES } from "../../src/lib/links";
 export const metadata: Metadata = pageMetadata({
   title: "Privacy Policy",
   description:
-    "How Pzync handles your data: files and clipboard stay on your local network, with no accounts and no cloud servers. Includes Android analytics details.",
+    "How SockLink handles your data: files and clipboard stay on your local network, with no accounts and no cloud servers. Includes Android analytics details.",
   path: "/privacy",
 });
 
@@ -17,7 +17,7 @@ export default function PrivacyPage() {
       jsonLd={breadcrumbJsonLd([{ name: "Privacy Policy", path: "/privacy" }])}
       eyebrow="Legal"
       title="Privacy Policy"
-      lead="Pzync moves your data between your own devices on your own network. This page explains exactly what is processed, what is stored, and the one thing that does leave your device."
+      lead="SockLink moves your data between your own devices on your own network. This page explains exactly what is processed, what is stored, and the one thing that does leave your device."
       updated="October 3, 2026"
     >
       <div className="prose">
@@ -91,13 +91,13 @@ export default function PrivacyPage() {
         <h2>6. Security</h2>
         <p>
           Because data travels over your local network, keep that network
-          protected with a strong Wi-Fi password and avoid using Pzync on public
+          protected with a strong Wi-Fi password and avoid using SockLink on public
           or untrusted networks. Only pair devices that you own or trust.
         </p>
 
         <h2>7. Children</h2>
         <p>
-          Pzync is not directed at children under 13 and we do not knowingly
+          SockLink is not directed at children under 13 and we do not knowingly
           collect personal information from them.
         </p>
 

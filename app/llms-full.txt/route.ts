@@ -35,7 +35,7 @@ ${sections}
 ${g.faqs.map(({ q, a }) => `**${q}**\n${a}`).join("\n\n")}`;
   });
 
-  const body = `# Pzync: full content
+  const body = `# SockLink: full content
 
 > ${SITE_DESCRIPTION}
 
@@ -73,7 +73,7 @@ ${faqBlock(supportFaqs)}
 See ${absoluteUrl("/docs")} for installation, pairing, firewall ports (UDP 8200, TCP 8080), webcam, microphone, screenshot sync and remote terminal setup.
 
 ## Privacy
-See ${absoluteUrl("/privacy")}. Files, clipboard, audio, camera and terminal data go directly between paired devices over the local network and never to a server operated by Pzync. The Android app sends anonymous usage analytics through Google Firebase.
+See ${absoluteUrl("/privacy")}. Files, clipboard, audio, camera and terminal data go directly between paired devices over the local network and never to a server operated by SockLink. The Android app sends anonymous usage analytics through Google Firebase.
 
 ## License
 MIT. See ${absoluteUrl("/license")}.

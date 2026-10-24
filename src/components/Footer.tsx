@@ -53,13 +53,13 @@ export default function Footer() {
       <div className="container">
         <div className="footer-top">
           <div className="footer-brand">
-            <a href="/" className="footer-logo" aria-label="Pzync home">
+            <a href="/" className="footer-logo" aria-label="SockLink home">
               <img src="/app-mark.svg" alt="" width={28} height={28} />
-              <span>Pzync</span>
+              <span>SockLink</span>
             </a>
             <p>Your phone and computer, working as one. Directly on your local network.</p>
             <div className="footer-cta">
-              <a href="/#downloads" className="btn btn-primary">Download Pzync</a>
+              <a href="/#downloads" className="btn btn-primary">Download SockLink</a>
               <a
                 href={PLAY_STORE_URL}
                 className="btn btn-outline"
@@ -97,7 +97,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2026 Pzync. Open source, no accounts, no cloud.</p>
+          <p>© 2026 SockLink. Open source, no accounts, no cloud.</p>
           <a
             href={GITHUB_URL}
             id="footer-link-contribute"
@@ -108,7 +108,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="footer-wordmark" aria-hidden="true">Pzync</div>
+      <div className="footer-wordmark" aria-hidden="true">SockLink</div>
     </footer>
   );
 }

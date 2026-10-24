@@ -16,7 +16,7 @@ export function pageMetadata({ title, description, path }: PageMetaInput): Metad
     url: absoluteUrl("/opengraph-image"),
     width: 1200,
     height: 630,
-    alt: "Pzync: connect Android to Ubuntu and Windows",
+    alt: "SockLink: connect Android to Ubuntu and Windows",
   };
   return {
     title,

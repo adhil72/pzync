@@ -279,7 +279,7 @@ export default function Features() {
               <p>Send anything from Android&apos;s Share menu, or sync your clipboard in one tap from the Quick Settings tile.</p>
             </div>
             <div className="chip-row">
-              <span className="priv-badge"><Share size={11} /> Share to Pzync</span>
+              <span className="priv-badge"><Share size={11} /> Share to SockLink</span>
               <span className="priv-badge"><Copy size={11} /> Clipboard tile</span>
             </div>
           </div>
@@ -327,7 +327,7 @@ export default function Features() {
               <PanelBottom size={18} />
             </div>
             <h3>Quietly Always There</h3>
-            <p>Pzync lives in your system tray, can start with your computer, and keeps itself up to date.</p>
+            <p>SockLink lives in your system tray, can start with your computer, and keeps itself up to date.</p>
             <ul className="bg-list">
               <li><PanelBottom size={14} /> System tray with transfer progress</li>
               <li><Power size={14} /> Launch at startup, minimized</li>

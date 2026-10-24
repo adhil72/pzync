@@ -7,7 +7,7 @@ import { DESKTOP_REPO, GITHUB_URL } from "../../src/lib/links";
 export const metadata: Metadata = pageMetadata({
   title: "MIT License: Open Source Android to PC App",
   description:
-    "Pzync is open source under the MIT License. Read the license and the third-party software notices for the Android, Windows and Ubuntu apps.",
+    "SockLink is open source under the MIT License. Read the license and the third-party software notices for the Android, Windows and Ubuntu apps.",
   path: "/license",
 });
 
@@ -39,11 +39,11 @@ export default function LicensePage() {
       jsonLd={breadcrumbJsonLd([{ name: "License", path: "/license" }])}
       eyebrow="Open source"
       title="MIT License"
-      lead="Pzync is free and open source. You can use it, study it, change it and share it."
+      lead="SockLink is free and open source. You can use it, study it, change it and share it."
     >
       <div className="prose" style={{ maxWidth: 720 }}>
         <p>
-          The Pzync Android app and desktop app are released under the MIT
+          The SockLink Android app and desktop app are released under the MIT
           License. The source code is on{" "}
           <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">GitHub</a>,
           including the{" "}
@@ -54,7 +54,7 @@ export default function LicensePage() {
       <div className="prose" style={{ marginTop: "3rem" }}>
         <h2>Third-party software</h2>
         <p>
-          Pzync is built on open-source software, including Tauri, React, Rust
+          SockLink is built on open-source software, including Tauri, React, Rust
           crates such as rustls, and Android Jetpack and Material components.
           Each is covered by its own license.
         </p>

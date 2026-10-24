@@ -1,5 +1,5 @@
 // Production origin, hardcoded on purpose (no trailing slash).
-export const SITE_URL = "https://pzync.tentaclespvtltd.com";
+export const SITE_URL = "https://socklink.tentaclespvtltd.com";
 
 export const SITE_NAME = "SockLink";
 
